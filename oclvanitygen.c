@@ -207,6 +207,7 @@ main(int argc, char **argv)
 					"CON : PayCon : P\n"
 					"CRW : Crown : 1\n"
 					"DASH : Dash : X\n"
+					"CCBC : CryptoCashBack : S\n"
 					"DEEPONION : DeepOnion : D\n"
 					"DNR: Denarius: D\n"
 					"DGB : Digibyte : D\n"
@@ -417,6 +418,14 @@ main(int argc, char **argv)
 					"Generating CCC Address\n");
 					addrtype = 15;
 					privtype = 224;
+					break;
+			}
+							else
+			if (strcmp(optarg, "CCBC")== 0) {
+				fprintf(stderr,
+					"Generating CCBC Address\n");
+					addrtype = 63;
+					privtype = 68;
 					break;
 			}
 			else
