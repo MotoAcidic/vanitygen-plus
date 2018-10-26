@@ -461,6 +461,7 @@ main(int argc, char **argv)
 					"TEST : Bitcoin Testnet : m or n\n"
 					"BTCD : Bitcoin Dark : R\n"
 					"CCC : Chococoin : 7\n"
+					"CCBC : CryptoCashBack : S\n"
 					"CCN : Cannacoin : C\n"
 					"CDN : Canadaecoin : C\n"
 					"CLAM : Clamcoin : x\n"
@@ -559,6 +560,14 @@ main(int argc, char **argv)
 					"Generating Actinium Address\n");
 					addrtype = 53;
 					privtype = 181;
+					break;
+			}
+			else
+			if (strcmp(optarg, "CCBC")== 0) {
+				fprintf(stderr,
+					"Generating CryptoCashBack Address\n");
+					addrtype = 63;
+					privtype = 68;
 					break;
 			}
 			else
